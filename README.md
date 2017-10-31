@@ -31,5 +31,6 @@ The simulator shows a blue vehicle navigating a map with known landmarks. The gr
 ## 3. Results & Discussion
 
 This particle filter implements the bicycle motion model to perform its prediction step when translating the initial particle positions followed by a nearest neighbor data association to associate each measurement with a landmark. Concretely, each measurement vector recieved by the particle filter is first transformed into map coordinates and then associated with a landmark ID provided in the given map using the minimum Euclidean distance between the predicted measurement and actual landmark coordinates. The image below shows the result once the vehicle has navigated the entire course.
-
+<p align="center">
 <img src="./graphics/result.png" width="750">
+</p>
